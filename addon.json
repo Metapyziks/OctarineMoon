@@ -1,0 +1,12 @@
+{
+    "title"       : "Consensual Valley - Core",
+    "description" : "Core content for the Consensual Valley TTT server.",
+    "type"        : "gamemode",
+    "tags"        : [ "fun" ],
+
+    "ignore" :
+    [
+        "*.jpg",
+        "*.pdn"
+    ]
+}
