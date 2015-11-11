@@ -43,7 +43,7 @@ function PLUGIN:PostGamemodeLoaded()
 
         -- normally only specific whitelisted ent classes can be possessed, but
         -- custom ents can mark themselves possessable as well
-        if not ent.AllowPropspec and not IsWhitelistedClass(ent:GetClass() or IsBlacklistedModel(ent:GetModel())) then return end
+        if (not ent.AllowPropspec and not IsWhitelistedClass(ent:GetClass())) or IsBlacklistedModel(ent:GetModel()) then return end
 
         PROPSPEC.Start(ply, ent)
     end
