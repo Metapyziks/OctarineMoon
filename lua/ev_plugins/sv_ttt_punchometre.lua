@@ -27,7 +27,7 @@ function PLUGIN:PostGamemodeLoaded()
     end
     
     local function IsBlacklistedModel(mdl)
-        return not mdl == nil and table.HasValue(model_blacklist, mdl)
+        return mdl ~= nil and table.HasValue(model_blacklist, mdl)
     end
 
     function PROPSPEC.Target(ply, ent)
